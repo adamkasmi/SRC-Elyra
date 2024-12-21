@@ -2,8 +2,7 @@
 - name: "Debugging JupyterLab Elyra Setup"
   hosts: localhost
   become: true
-  become_user: root
   tasks:
     - name: Echo debug message
-      command: echo "Debug: Entering the playbook execution."
-      changed_when: false
+      command:
+        cmd: echo "Debug: Entering the playbook execution."
